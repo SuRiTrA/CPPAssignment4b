@@ -2,13 +2,13 @@
 using namespace std;
 //C++ program to display all array elements using recursion.
 
-int printfun(int num[],int c,int size)
+void printfunc(int num[],int c,int size)
 {
 	if(c<size)
   {
 		cout<<num[c]<<endl;
-		display(num,++c,size);
-	}
+		printfunc(num,++c,size);
+  }
 }
 
 int main()
