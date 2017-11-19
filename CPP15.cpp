@@ -31,6 +31,6 @@ int main()
 		cout<<"Enter your element:";
 		cin>>arr[i];
 	}
-  min_max(arr,0,size);
+  min_max(arr,0,size,arr[0],arr[0]);
   return 0;
 }
