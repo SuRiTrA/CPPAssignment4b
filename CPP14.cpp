@@ -3,7 +3,7 @@ using namespace std;
 //C++ program to find sum of elements of array using recursion.
 
 void sumprint(int numbers[],int c,int size,int sum)
-{
+{   
 	if(c<size){
 		sum+=numbers[c];
 		sumprint(numbers,++c,size,sum);
@@ -24,6 +24,6 @@ int main()
 		cout<<"Enter your element:";
 		cin>>arr[i];
 	}
-  sumprint(arr,0,size);
+  sumprint(arr,0,size,0);
   return 0;
 }
